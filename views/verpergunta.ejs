@@ -1,0 +1,47 @@
+<%- include ('../views/parciais/header.ejs'); %>
+
+  <body>
+    <section class="boxresp">
+      <div class="angry-grid">
+        <div id="item-0">
+          <%- include ('../views/parciais/nav.ejs'); %>
+          <h1>Ver Perguntas </h1>
+
+           
+            <% perguntas.forEach(perguntas=> { %>
+              <figure class="profile-card">
+
+                <div class="profile-body">
+
+                  <div class="img-perfil">
+                    <img src="/img/perunta.png" title="Loop Nerd" alt="perfil">
+                  </div>
+
+                  <div class="titulo">
+                    <%= perguntas.titulo %>
+                  </div>
+                  <figcaption class="descricao">
+                    <%= perguntas.descricao %>
+                      
+
+                  </figcaption>
+
+
+                </div>
+
+              </figure><!--Profile Card-->
+              <br><br><br><br><br>
+              <% }) %>
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+
+  </html>
