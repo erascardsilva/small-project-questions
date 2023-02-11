@@ -1,4 +1,5 @@
 # Projeto "Perguntas-Nodejs" AppWeb.
+'Projeto em anadamento algumas correções em andamento'
 
 Perguntas e Respostas feito em NODE.JS com banco de dados insere e confere dados em banco de dados
 utiliza mysql , express 
