@@ -45,6 +45,12 @@ nav a:focus {
 
 }
 
+.titulo  {
+    margin-top: 10%;
+    color: whitesmoke;
+    
+}
+
 /* Menu */
 .line a {
 	padding: 10px;
