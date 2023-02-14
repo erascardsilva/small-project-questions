@@ -1,0 +1,17 @@
+<form class="formulario" method="POST" action="/resposta">
+    <p><h3><%= pergunta.titulo %> </h3></p>
+    <hr>
+    <h4><%= pergunta.descricao %></h4> 
+    <hr>
+    <textarea name="corporesposta" class="campo" placeholder="Responder" required="true"></textarea>
+    <input type="hidden" value="<%= pergunta.id %>" name="perguntaid">
+    <button type="submit" class="botao"> Responder </button>
+</form>
+
+<p><h2>Respostas</h2></p>
+
+<% resposta.forEach(resposta => { %>
+<hr>
+    <h3><%= resposta.corpo %></h3>
+
+    <% }) %>
