@@ -1,6 +1,7 @@
 # Projeto "Perguntas vers 2.0 " AppWeb.
 'App pode ser parte integrante de um site para que o usuario deixe perguntas e a empresa a responda como se fosse um chat, visivel a todos clientes'
 'Projeto em anadamento algumas correções em andamento'
+'Adicionado funçoes de responder as perguntas e nas respostas possibilidade de ver o que foi respondido como um chat de conversa'
 
 Perguntas e Respostas feito em NODE.JS com banco de dados insere e confere dados em banco de dados
 utiliza mysql , express 
