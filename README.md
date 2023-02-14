@@ -1,4 +1,4 @@
-# Projeto "Perguntas vers 1.0 " AppWeb.
+# Projeto "Perguntas vers 2.0 " AppWeb.
 'App pode ser parte integrante de um site para que o usuario deixe perguntas e a empresa a responda como se fosse um chat, visivel a todos clientes'
 'Projeto em anadamento algumas correções em andamento'
 
