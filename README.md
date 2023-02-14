@@ -1,6 +1,7 @@
 # Projeto "Perguntas vers 2.0 " AppWeb.
 
-depend : Express | EJS | mysql | Sequelize  | params |  parser
+"depend : Express | EJS | mysql | Sequelize  | params |  parser"
+
 'App pode ser parte integrante de um site para que o usuario deixe perguntas e a empresa a responda como se fosse um chat, visivel a todos clientes'
 'Projeto em anadamento algumas correções em andamento'
 'Adicionado funçoes de responder as perguntas e nas respostas possibilidade de ver o que foi respondido como um chat de conversa'
