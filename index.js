@@ -3,6 +3,7 @@ const app = express();
 const bodyParsed = require("body-parser");
 const connection = require("./database/database");
 const Pergunta = require("./database/Pergunta");
+const Respostas = require("./database/Respostas");
 
 connection
     .authenticate()
@@ -30,7 +31,9 @@ app.get("/perguntar", (req,res) => {
 });
 
 app.get("/verpergunta", (req,res) =>{
-    Pergunta.findAll({raw: true}).then(perguntas =>{
+    Pergunta.findAll({raw: true , order:[
+        ["id" , "DESC"]
+    ]}).then(perguntas =>{
         res.render("verpergunta",{ 
                 perguntas : perguntas
             })})
@@ -51,5 +54,44 @@ app.post("/perguntar", (req, res) => {
          res.redirect('/');
     });
 });
+
+app.get("/verpergunta/:id", (req,res) =>{
+    let idperg = req.params.id;
+    Pergunta.findOne({
+        where: { id : idperg }
+    }).then(pergunta => {
+        
+        if (pergunta != undefined){
+            Respostas.findAll({
+                where: {perguntaID : idperg }
+            }).then(resposta =>{
+                res.render("perguntaresp",{
+                    pergunta : pergunta,
+                    resposta: resposta
+                });
+            });
+
+
+           
+        }else{
+            res.redirect("/");
+        }
+    })
+});
+
+app.post("/resposta", (req,res) =>{
+    let corpo = req.body.corporesposta;
+    let perguntaID = req.body.perguntaid;
+    
+    Respostas.create({
+        corpo : corpo,
+        perguntaID: perguntaID
+    }).then(()=>{
+        res.redirect('/verpergunta/'+perguntaID);
+   
+
+    });
+});
+
 
 app.listen(3000, () => { console.log("conectado acesse http://localhost:3000"); });
