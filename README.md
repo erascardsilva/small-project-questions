@@ -1,5 +1,4 @@
-# Projeto "Perguntas vers 2.0 " AppWeb.  |  Project "Questions version 2.0" AppWeb.
-
+# Projeto "Perguntas vers 2.0 " AppWeb.   
 "depend : Express | EJS | mysql | Sequelize"
 
 'App pode ser parte integrante de um site para que o usuario deixe perguntas e a empresa a responda como se fosse um chat, visivel a todos clientes'
@@ -9,9 +8,15 @@
 Perguntas e Respostas feito em NODE.JS com banco de dados insere e confere dados em banco de dados
 utiliza mysql , express 
 
+ # Project "Questions version 2.0" AppWeb.
+"depend : Express | EJS | mysql | Sequelize"
+
 App can be an integral part of a website so that the user leaves questions and the company responds as if it were a chat, visible to all customers'
 'Project in progress some fixes in progress'
 'Added functions of answering questions and in the answers the possibility of seeing what was answered as a chat conversation'
+
+Questions and Answers made in NODE.JS with database inserts and checks data in database
+use mysql, express
 
 ![image](https://user-images.githubusercontent.com/70297459/218264106-31bcb0ba-355e-4a14-a0f5-be0bdf3e9001.png)
 
